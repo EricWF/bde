@@ -13,7 +13,7 @@
 
 /Hierarchical Synopsis
 /---------------------
- The 'bdlt' package currently has 18 components having 7 levels of physical
+ The 'bdlt' package currently has 20 components having 7 levels of physical
  dependency.  The list below shows the hierarchical ordering of the components.
  The order of components within each level is not architecturally significant,
  just alphabetical.
@@ -32,13 +32,15 @@
 
   3. bdlt_dateutil
      bdlt_intervalconversionutil
+     bdlt_packedcalendar
      bdlt_time
 
   2. bdlt_date
      bdlt_datetimeinterval
      bdlt_dayofweekset
 
-  1. bdlt_dayofweek
+  1. bdlt_calendarreverseiterator
+     bdlt_dayofweek
      bdlt_monthofyear
      bdlt_serialdateimputil
      bdlt_timeunitratio
@@ -46,6 +48,9 @@
 
 /Component Synopsis
 /------------------
+: 'bdlt_calendarreverseiterator':
+:      Provide reverse iterator template for calendar iterators.
+:
 : 'bdlt_currenttime':
 :      Provide utilities to retrieve the current time.
 :
@@ -87,6 +92,9 @@
 :
 : 'bdlt_monthofyear':
 :      Enumerate the set of month-of-year values.
+:
+: 'bdlt_packedcalendar':
+:      Provide a compact repository for weekend/holiday information.
 :
 : 'bdlt_serialdateimputil':
 :      Provide low-level support functions for date-value manipulation.
